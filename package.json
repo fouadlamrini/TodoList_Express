@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "\"# TodoList_Express\"",
   "main": "index.js",
-  "type": "module",
   "scripts": {
  "start": "nodemon server.js"
   },

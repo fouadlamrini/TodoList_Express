@@ -1,16 +1,19 @@
-import express from "express";
-import mongoose from "mongoose";
-import dotenv from "dotenv";
-const app=express();
-dotenv.config();
-const PORT=process.env.PORT||7000;
-const MONGOURL=process.env.MNOGO_URL;
-mongoose.connect(MONGOURL).then(()=>{
-    console.log("db connected");
-    app.listen(PORT,()=>{
-    console.log(`server is running at ${PORT}`);
+const express = require("express");
+const connectDB = require("./config/database");
+const todosRouter = require('./routes/todos');
+const app = express();
+
+const PORT = process.env.PORT || 7000;
+// General middlewares
+app.use(express.json());
+
+// connect a db
+
+connectDB;
+//Run server
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
-}).catch((err)=>{
-    console.log(err);
-})
+
 
