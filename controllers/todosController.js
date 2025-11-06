@@ -1,6 +1,8 @@
+const { response } = require("express");
 const TodoModel = require("../models/todoModel");
 
 class todoController {
+
   async createTodo(req, res) {
     const { title, description, status } = req.body;
 
@@ -16,10 +18,11 @@ class todoController {
     }
   }
 
+
  async getTodoByID(req, res) {
   try {
    
-    const { id } = req.params;
+    const {id} = req.params;
 
     const todo = await TodoModel.findById(id);
 
@@ -34,8 +37,27 @@ class todoController {
   }
 }
 
+
   async getAllTodos() {}
-  async deleteTodo(id) {}
+
+async deleteTodo(req, res) {
+  try {
+    const { id } = req.params;
+    const todo = await TodoModel.findById(id);
+
+    if (!todo) {
+      return res.status(404).json({ message: "Todo not found" });
+    }
+
+    await TodoModel.findByIdAndDelete(id);
+    return res.status(200).json({ message: "Todo deleted successfully" });
+
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ message: "Server error" });
+  }
+}
+
   async updateTodo() {}
 }
 module.exports = new todoController();

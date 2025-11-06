@@ -6,5 +6,6 @@ router.get('/', (req, res) => {
   res.send('Users home page');
 });
 router.get('/:id',todosController.getTodoByID);
+router.delete('/:id',todosController.deleteTodo);
 module.exports = router;
 
