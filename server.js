@@ -1,19 +1,36 @@
 const express = require("express");
-const connectDB = require("./config/database");
+const connectDb = require("./config/database");
+const dotenv = require("dotenv");
+const morgan = require('morgan');
+const helmet = require('helmet');
+dotenv.config();
 const todosRouter = require('./routes/todos');
 const app = express();
 
 const PORT = process.env.PORT || 7000;
-// General middlewares
+// 1. Application-wide middleware
+
 app.use(express.json());
+app.use(morgan('dev'));
+app.use(helmet());
+// 3. Routes
+app.use('/todos', todosRouter);
+// 4. 404 handler
+app.use((req, res) => {
+  res.status(404).send( 'Not found');
+});
+
+
 
 // connect a db
 
-connectDB;
+connectDb().then(()=>{
+app.listen(PORT, () => {
+  console.log(`Server is running on port http://localhost:${PORT}`);
+});
+});
 //Run server
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
+
 
 

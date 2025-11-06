@@ -15,6 +15,6 @@ const connectDb=async()=>{
   };
 
 }
-module.exports = {connectDb,dotenv} ;
+module.exports = connectDb ;
 
 
