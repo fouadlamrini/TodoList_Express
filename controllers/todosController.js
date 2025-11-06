@@ -2,7 +2,7 @@ const { response } = require("express");
 const TodoModel = require("../models/todoModel");
 
 class todoController {
-
+// Creer Un ToDo
   async createTodo(req, res) {
     const { title, description, status } = req.body;
 
@@ -18,7 +18,7 @@ class todoController {
     }
   }
 
-
+// Get Un Todo By ID
  async getTodoByID(req, res) {
   try {
    
@@ -37,9 +37,20 @@ class todoController {
   }
 }
 
+// Get All Todo
 
-  async getAllTodos() {}
+  async getAllTodos(req,res) {
+    try {
+      const todo=await TodoModel.find();
+      res.status(200).json({message:"todos:",
+        todo:todo
+      });
+    } catch (error) {
+      res.status(500).json({error:error});
+    }
+  }
 
+// Delet Un Todo
 async deleteTodo(req, res) {
   try {
     const { id } = req.params;
@@ -57,7 +68,27 @@ async deleteTodo(req, res) {
     return res.status(500).json({ message: "Server error" });
   }
 }
+//update todo
+  async updateTodo(req,res) {
+      try {
+    const {id}=req.params;
+    const todo=await TodoModel.findById(id);
+    if (!todo) {
+      return res.status(404).json({ message: "Todo not found" });
+    }
+        const { title, description } = req.body;
+     const updatedTodo= await TodoModel.findByIdAndUpdate( id,
+      { title, description },
+      { new: true } );
+     return res.status(200).json({ message: "Todo updated successfully",
+      newTodo:updatedTodo
 
-  async updateTodo() {}
+      });
+  }catch(error){
+     console.error(error);
+    return res.status(500).json({ message: "Server error" });
+  }
+
+  }
 }
 module.exports = new todoController();
