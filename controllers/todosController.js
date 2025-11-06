@@ -76,7 +76,7 @@ async deleteTodo(req, res) {
     if (!todo) {
       return res.status(404).json({ message: "Todo not found" });
     }
-        const { title, description } = req.body;
+        const {title, description } = req.body;
      const updatedTodo= await TodoModel.findByIdAndUpdate( id,
       { title, description },
       { new: true } );
@@ -90,5 +90,30 @@ async deleteTodo(req, res) {
   }
 
   }
+
+ async updateStatus(req, res) {
+  try {
+    const { id } = req.params;
+    const todo = await TodoModel.findById(id);
+    if (!todo) {
+      return res.status(404).json({ message: "Todo not found" });
+    }
+    if (todo.status === "pending") {
+      todo.status = "done";
+    } else {
+      todo.status = "pending";
+    }
+    await todo.save();
+
+    return res.status(200).json({
+      message: "Status updated successfully",
+      newStatus: todo.status,
+    });
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ message: "Server error" });
+  }
+}
+
 }
 module.exports = new todoController();
