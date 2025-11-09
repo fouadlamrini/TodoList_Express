@@ -1,0 +1,1 @@
+{"level":"info","message":"::1 - - [09/Nov/2025:12:27:48 +0000] \"GET /todos HTTP/1.1\" 200 - \"-\" \"PostmanRuntime/7.50.0\"","service":"user-service"}

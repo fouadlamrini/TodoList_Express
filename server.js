@@ -4,6 +4,7 @@ const dotenv = require("dotenv");
 const morgan = require('morgan');
 const helmet = require('helmet');
 const compression = require('compression');
+const logger=require('./utils/logger');
 dotenv.config();
 const todosRouter = require('./routes/todos');
 const app = express();
@@ -12,7 +13,8 @@ const PORT = process.env.PORT || 7000;
 // 1. Application-wide middleware
 
 app.use(express.json());
-app.use(morgan('dev'));
+// app.use(morgan('dev'));
+app.use(morgan('combined', { stream: { write: msg => logger.info(msg.trim()) }}));
 app.use(helmet());
 
 app.use(compression({
