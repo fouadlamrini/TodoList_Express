@@ -1,7 +1,11 @@
 const todosController=require("../controllers/todosController");
 const express = require('express');
 const router = express.Router();
-router.post('/',todosController.createTodo);
+const validationMidlleware=require('../middleware/validationMiddleware');
+const {TodoModelSchema}=require('../utils/validationSchema');
+
+
+router.post('/',validationMidlleware.validate(TodoModelSchema),todosController.createTodo);
 
 router.get('/:id',todosController.getTodoByID);
 router.delete('/:id',todosController.deleteTodo);
