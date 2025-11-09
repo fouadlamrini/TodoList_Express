@@ -3,6 +3,7 @@ const connectDb = require("./config/database");
 const dotenv = require("dotenv");
 const morgan = require('morgan');
 const helmet = require('helmet');
+const compression = require('compression');
 dotenv.config();
 const todosRouter = require('./routes/todos');
 const app = express();
@@ -13,6 +14,10 @@ const PORT = process.env.PORT || 7000;
 app.use(express.json());
 app.use(morgan('dev'));
 app.use(helmet());
+
+app.use(compression({
+  threshold: 0
+}));
 // 3. Routes
 app.use('/todos', todosRouter);
 // 4. 404 handler
