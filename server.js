@@ -23,11 +23,14 @@ app.use(
     })
 );
 // 3. Routes
+
+
 app.use('/todos', todosRouter);
 // 4. 404 handler
 app.use((req, res) => {
     res.status(404).send('Not found');
 });
+
 
 // connect a db
 
@@ -36,4 +39,5 @@ connectDb().then(() => {
         console.log(`Server is running on port http://localhost:${PORT}`);
     });
 });
-//Run server
+
+module.exports = app;

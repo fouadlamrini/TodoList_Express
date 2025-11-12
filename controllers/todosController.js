@@ -5,6 +5,12 @@ class todoController {
     async createTodo(req, res) {
         const { title, description, status } = req.body;
 
+        const exist = await TodoModel.findOne({ title: title });
+
+        if (exist) {
+            return res.status(409).json({ message: 'Todo with this title already exists' });
+        }
+
         try {
             const todo = await TodoModel.create({
                 title: title,
@@ -40,8 +46,9 @@ class todoController {
         try {
             const todo = await TodoModel.find();
             res.status(200).json({
+                success: true,
                 message: 'todos:',
-                todo: todo,
+                todo: todo ? todo : 'todo is empty',
             });
         } catch (error) {
             res.status(500).json({ error: error });
