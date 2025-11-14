@@ -35,4 +35,10 @@ export default [
             ],
         },
     },
+        {
+        files: ['test/**/*.js'], 
+        env: {
+            mocha: true,
+        },
+    },
 ];

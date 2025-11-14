@@ -24,13 +24,11 @@ app.use(
 );
 // 3. Routes
 
-
 app.use('/todos', todosRouter);
 // 4. 404 handler
 app.use((req, res) => {
     res.status(404).send('Not found');
 });
-
 
 // connect a db
 
