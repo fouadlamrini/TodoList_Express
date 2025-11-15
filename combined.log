@@ -16,3 +16,7 @@
 {"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:06:04 +0000] \"POST /todos HTTP/1.1\" 409 - \"-\" \"-\"","service":"user-service"}
 {"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:06:04 +0000] \"POST /todos HTTP/1.1\" 201 - \"-\" \"-\"","service":"user-service"}
 {"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:06:04 +0000] \"GET /todos/69170d1c67b706dd2705a327 HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:09:12 +0000] \"POST /todos HTTP/1.1\" 409 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:09:12 +0000] \"POST /todos HTTP/1.1\" 201 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:09:12 +0000] \"GET /todos/69170dd85f3d972e4573ca12 HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:09:12 +0000] \"GET /todos/69170dd85f3d972e4573ca14 HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}
