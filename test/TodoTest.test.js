@@ -4,17 +4,18 @@ const app = require('../server');
 const mongoose = require('mongoose');
 const TodoModel = require('../models/todoModel');
 describe('crud todolist',function(){
-
-    //test create todo 
-    describe('/todos', function () {
-    before(async () => {
+     let todo;
+      before(async () => {
         
-        await TodoModel.create({ title: 'Existing', description: 'test', status: 'pending' });
+         todo= await TodoModel.create({ title: 'Existing', description: 'test', status: 'pending' });
     });
 
     after(async () => {
         await TodoModel.deleteMany({});
     });
+    //test create todo 
+    describe('/todos', function () {
+   
 
     it('should return 409 if todo title already exists', async function () {
         const response = await request(app)
@@ -37,6 +38,7 @@ describe('crud todolist',function(){
     })
     
 });
+//tes get Todo by id
 
 describe('/todos/:id',function(){
     it('should return 404 if todo not found',async function(){
@@ -48,14 +50,18 @@ describe('/todos/:id',function(){
         expect(response.body.message).to.equal('Todo not found');
     });
     it('should return 200 if todo found',async function(){
-        const todo = await TodoModel.create({ title: 'FindMe', description: 'test find', status: 'pending' });
+     
         const response=await request(app)
         .get(`/todos/${todo._id}`)
         .set('Accept', 'application/json')
         expect(response.status).to.equal(200);
         expect(response.body.message).to.equal('Todo trouvé');
     })
-})
+});
+//test get All Todo
+// describe('/todos',function(){
+//     it()
+// })
 
 
 })

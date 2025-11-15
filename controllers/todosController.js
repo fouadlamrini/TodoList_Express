@@ -20,7 +20,7 @@ class todoController {
             return res.status(201).json({ message: 'Todo created', todo });
         } catch (err) {
             console.log(err);
-            return res.status(409).json({ message: 'Todo with this title already exists' });
+            return res.status(401).json({ message: err });
         }
     }
 

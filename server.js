@@ -9,11 +9,11 @@ dotenv.config();
 const todosRouter = require('./routes/todos');
 const app = express();
 
-const PORT = process.env.PORT || 7000;
+const PORT = process.env.PORT;
 // 1. Application-wide middleware
 
 app.use(express.json());
-// app.use(morgan('dev'));
+app.use(morgan('dev'));
 app.use(morgan('combined', { stream: { write: (msg) => logger.info(msg.trim()) } }));
 app.use(helmet());
 
@@ -33,7 +33,7 @@ app.use((req, res) => {
 // connect a db
 
 connectDb().then(() => {
-    app.listen(PORT, () => {
+    app.listen(PORT, '0.0.0.0', () => {
         console.log(`Server is running on port http://localhost:${PORT}`);
     });
 });
