@@ -1,5 +1,6 @@
+const { isValidObjectId } = require('mongoose');
 const TodoModel = require('../models/todoModel');
-
+const mongoose = require('mongoose');
 class todoController {
     // Creer Un ToDo
     async createTodo(req, res) {
@@ -59,6 +60,9 @@ class todoController {
     async deleteTodo(req, res) {
         try {
             const { id } = req.params;
+            if (!mongoose.Types.ObjectId.isValid(id)) {
+                return res.status(400).json({ message: 'Invalid Todo ID' });
+            }
             const todo = await TodoModel.findById(id);
 
             if (!todo) {
@@ -76,6 +80,9 @@ class todoController {
     async updateTodo(req, res) {
         try {
             const { id } = req.params;
+            if (!mongoose.Types.ObjectId.isValid(id)) {
+                return res.status(400).json({ message: 'Invalid Todo ID' });
+            }
             const todo = await TodoModel.findById(id);
             if (!todo) {
                 return res.status(404).json({ message: 'Todo not found' });
@@ -98,6 +105,9 @@ class todoController {
     async updateStatus(req, res) {
         try {
             const { id } = req.params;
+            if (!mongoose.Types.ObjectId.isValid(id)) {
+                return res.status(400).json({ message: 'Invalid Todo ID' });
+            }
             const todo = await TodoModel.findById(id);
             if (!todo) {
                 return res.status(404).json({ message: 'Todo not found' });
