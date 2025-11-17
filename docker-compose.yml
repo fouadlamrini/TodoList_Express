@@ -1,0 +1,18 @@
+# volumes----->bind mount (link ma bin local o container/ Anonymous Volume ------->
+# ila bdlt chi 7aja f local maghadich itbdl f container)
+services:
+    node-app:
+        container_name: todolist_container
+        build: .
+        volumes:
+            - .:/app
+        ports:
+            - '3000:3000'
+        env_file:
+            - ./.env
+    mongo:
+        image: mongo
+        restart: always
+        environment:
+            MONGO_INITDB_ROOT_USERNAME: root
+            MONGO_INITDB_ROOT_PASSWORD: example

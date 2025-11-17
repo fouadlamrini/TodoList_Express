@@ -1,1 +1,169 @@
 {"level":"info","message":"::1 - - [09/Nov/2025:12:27:48 +0000] \"GET /todos HTTP/1.1\" 200 - \"-\" \"PostmanRuntime/7.50.0\"","service":"user-service"}
+{"level":"info","message":"::1 - - [09/Nov/2025:17:33:42 +0000] \"GET /todos HTTP/1.1\" 200 - \"-\" \"PostmanRuntime/7.50.0\"","service":"user-service"}
+{"level":"info","message":"::1 - - [09/Nov/2025:17:33:57 +0000] \"GET /todos/data HTTP/1.1\" 500 - \"-\" \"PostmanRuntime/7.50.0\"","service":"user-service"}
+{"level":"info","message":"::1 - - [09/Nov/2025:17:33:59 +0000] \"GET /todos/data HTTP/1.1\" 500 - \"-\" \"PostmanRuntime/7.50.0\"","service":"user-service"}
+{"level":"info","message":"::1 - - [10/Nov/2025:09:03:50 +0000] \"GET / HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","service":"user-service"}
+{"level":"info","message":"::1 - - [10/Nov/2025:09:03:50 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","service":"user-service"}
+{"level":"info","message":"::1 - - [10/Nov/2025:09:04:30 +0000] \"GET /todos HTTP/1.1\" 200 - \"-\" \"PostmanRuntime/7.50.0\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [12/Nov/2025:13:25:04 +0000] \"POST /todos HTTP/1.1\" 201 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [12/Nov/2025:13:25:04 +0000] \"POST /todos HTTP/1.1\" 409 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:10:35:15 +0000] \"POST /todos HTTP/1.1\" 409 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:10:43:13 +0000] \"POST /todos HTTP/1.1\" 409 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:10:43:13 +0000] \"POST /todos HTTP/1.1\" 201 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:03:51 +0000] \"POST /todos HTTP/1.1\" 409 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:03:51 +0000] \"POST /todos HTTP/1.1\" 201 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:03:51 +0000] \"GET /todos/123 HTTP/1.1\" 500 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:06:04 +0000] \"POST /todos HTTP/1.1\" 409 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:06:04 +0000] \"POST /todos HTTP/1.1\" 201 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:06:04 +0000] \"GET /todos/69170d1c67b706dd2705a327 HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:09:12 +0000] \"POST /todos HTTP/1.1\" 409 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:09:12 +0000] \"POST /todos HTTP/1.1\" 201 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:09:12 +0000] \"GET /todos/69170dd85f3d972e4573ca12 HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:09:12 +0000] \"GET /todos/69170dd85f3d972e4573ca14 HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:12:12 +0000] \"POST /todos HTTP/1.1\" 409 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:12:12 +0000] \"POST /todos HTTP/1.1\" 201 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:12:12 +0000] \"GET /todos/69170e8cd12b091689293fff HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:12:12 +0000] \"GET /todos/undefined HTTP/1.1\" 500 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:15:49 +0000] \"POST /todos HTTP/1.1\" 409 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:15:49 +0000] \"POST /todos HTTP/1.1\" 201 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:15:49 +0000] \"GET /todos/69170f6512e2c913bb9f2fef HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:17:44 +0000] \"POST /todos HTTP/1.1\" 409 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:17:44 +0000] \"POST /todos HTTP/1.1\" 201 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:17:44 +0000] \"GET /todos/69170fd869ab5577b28aa54a HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:20:22 +0000] \"POST /todos HTTP/1.1\" 409 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:20:22 +0000] \"POST /todos HTTP/1.1\" 201 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:20:22 +0000] \"GET /todos/69171076c98e4637645f44ae HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:20:22 +0000] \"GET /todos/69171076c98e4637645f44a6 HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:22:15 +0000] \"POST /todos HTTP/1.1\" 409 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:22:15 +0000] \"POST /todos HTTP/1.1\" 201 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:22:15 +0000] \"GET /todos/691710e7b28d476a9a833929 HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:11:22:15 +0000] \"GET /todos/691710e7b28d476a9a833921 HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::1 - - [14/Nov/2025:14:05:55 +0000] \"POST /todos HTTP/1.1\" 400 - \"-\" \"PostmanRuntime/7.50.0\"","service":"user-service"}
+{"level":"info","message":"::1 - - [14/Nov/2025:14:06:05 +0000] \"POST /todos HTTP/1.1\" 201 - \"-\" \"PostmanRuntime/7.50.0\"","service":"user-service"}
+{"level":"info","message":"::1 - - [14/Nov/2025:14:06:27 +0000] \"GET /todos HTTP/1.1\" 200 - \"-\" \"PostmanRuntime/7.50.0\"","service":"user-service"}
+{"level":"info","message":"::1 - - [14/Nov/2025:14:06:59 +0000] \"PUT /todos/6917374d4cbbcf1228bdd145 HTTP/1.1\" 200 - \"-\" \"PostmanRuntime/7.50.0\"","service":"user-service"}
+{"level":"info","message":"::1 - - [14/Nov/2025:14:07:41 +0000] \"PUT /todos/6917374d4cbbcf1228bdd145 HTTP/1.1\" 200 - \"-\" \"PostmanRuntime/7.50.0\"","service":"user-service"}
+{"level":"info","message":"::1 - - [14/Nov/2025:14:07:54 +0000] \"PUT /todos/6917374d4cbbcf1228bdd145 HTTP/1.1\" 200 - \"-\" \"PostmanRuntime/7.50.0\"","service":"user-service"}
+{"level":"info","message":"::1 - - [14/Nov/2025:14:09:09 +0000] \"PUT /todos/6917374d4cbbcf1228bdd145 HTTP/1.1\" 200 - \"-\" \"PostmanRuntime/7.50.0\"","service":"user-service"}
+{"level":"info","message":"::1 - - [14/Nov/2025:14:10:29 +0000] \"PUT /todos/6917374d4cbbcf1228bdd145 HTTP/1.1\" 200 - \"-\" \"PostmanRuntime/7.50.0\"","service":"user-service"}
+{"level":"info","message":"::1 - - [14/Nov/2025:14:10:41 +0000] \"PUT /todos/6917374d4cbbcf1228bdd14 HTTP/1.1\" 500 - \"-\" \"PostmanRuntime/7.50.0\"","service":"user-service"}
+{"level":"info","message":"::1 - - [14/Nov/2025:14:10:58 +0000] \"PUT /todos/6917374d4cbbcf1228bdd146 HTTP/1.1\" 404 - \"-\" \"PostmanRuntime/7.50.0\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:14:15:41 +0000] \"POST /todos HTTP/1.1\" 409 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:14:15:41 +0000] \"POST /todos HTTP/1.1\" 201 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:14:15:41 +0000] \"GET /todos/6917398d851031044afb780e HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Nov/2025:14:15:41 +0000] \"GET /todos/6917398c851031044afb7806 HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::1 - - [15/Nov/2025:14:55:21 +0000] \"GET /todos HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","service":"user-service"}
+{"level":"info","message":"::1 - - [15/Nov/2025:14:56:02 +0000] \"GET /todos HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","service":"user-service"}
+{"level":"info","message":"::1 - - [15/Nov/2025:14:56:03 +0000] \"GET /todos HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","service":"user-service"}
+{"level":"info","message":"::1 - - [15/Nov/2025:14:56:04 +0000] \"GET /todos HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","service":"user-service"}
+{"level":"info","message":"::1 - - [15/Nov/2025:14:56:22 +0000] \"GET /todos HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","service":"user-service"}
+{"level":"info","message":"::1 - - [15/Nov/2025:14:56:22 +0000] \"GET /todos HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","service":"user-service"}
+{"level":"info","message":"::1 - - [15/Nov/2025:14:56:23 +0000] \"GET /todos HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","service":"user-service"}
+{"level":"info","message":"::1 - - [15/Nov/2025:14:56:23 +0000] \"GET /todos HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","service":"user-service"}
+{"level":"info","message":"::1 - - [15/Nov/2025:14:56:23 +0000] \"GET /todos HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","service":"user-service"}
+{"level":"info","message":"::1 - - [15/Nov/2025:14:56:24 +0000] \"GET /todos HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","service":"user-service"}
+{"level":"info","message":"::1 - - [15/Nov/2025:14:56:24 +0000] \"GET /todos HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","service":"user-service"}
+{"level":"info","message":"::1 - - [15/Nov/2025:14:56:24 +0000] \"GET /todos HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","service":"user-service"}
+{"level":"info","message":"::1 - - [15/Nov/2025:14:56:24 +0000] \"GET /todos HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","service":"user-service"}
+{"level":"info","message":"::1 - - [15/Nov/2025:14:56:27 +0000] \"GET /todos HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","service":"user-service"}
+{"level":"info","message":"::1 - - [15/Nov/2025:14:56:30 +0000] \"GET /todos HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","service":"user-service"}
+{"level":"info","message":"::1 - - [15/Nov/2025:14:56:43 +0000] \"GET /todos HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","service":"user-service"}
+{"level":"info","message":"::1 - - [15/Nov/2025:14:57:06 +0000] \"GET / HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","service":"user-service"}
+{"level":"info","message":"::1 - - [15/Nov/2025:14:57:15 +0000] \"GET /todos/data HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","service":"user-service"}
+{"level":"info","message":"::1 - - [15/Nov/2025:14:57:37 +0000] \"GET /todos/data HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","service":"user-service"}
+{"level":"info","message":"::1 - - [15/Nov/2025:14:57:57 +0000] \"GET /todos/data HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","service":"user-service"}
+{"level":"info","message":"::1 - - [15/Nov/2025:17:18:55 +0000] \"GET /todos HTTP/1.1\" 200 - \"-\" \"PostmanRuntime/7.49.1\"","service":"user-service"}
+{"level":"info","message":"127.0.0.1 - - [15/Nov/2025:17:40:54 +0000] \"GET / HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","service":"user-service"}
+{"level":"info","message":"127.0.0.1 - - [15/Nov/2025:17:40:54 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","service":"user-service"}
+{"level":"info","message":"127.0.0.1 - - [15/Nov/2025:17:41:06 +0000] \"GET /todos HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","service":"user-service"}
+{"level":"info","message":"172.17.0.1 - - [15/Nov/2025:18:56:05 +0000] \"GET /todos HTTP/1.1\" 500 - \"-\" \"PostmanRuntime/7.49.1\"","service":"user-service"}
+{"level":"info","message":"127.0.0.1 - - [16/Nov/2025:18:29:26 +0000] \"GET /todos HTTP/1.1\" 200 - \"-\" \"PostmanRuntime/7.49.1\"","service":"user-service"}
+{"level":"info","message":"127.0.0.1 - - [16/Nov/2025:18:30:11 +0000] \"POST /todos HTTP/1.1\" 201 - \"-\" \"PostmanRuntime/7.49.1\"","service":"user-service"}
+{"level":"info","message":"127.0.0.1 - - [16/Nov/2025:18:30:41 +0000] \"PUT /todos/691a1833a26fc6a8a171148 HTTP/1.1\" 500 - \"-\" \"PostmanRuntime/7.49.1\"","service":"user-service"}
+{"level":"info","message":"127.0.0.1 - - [16/Nov/2025:18:32:31 +0000] \"PUT /todos/691a1833a26fc6a8a171148 HTTP/1.1\" 500 - \"-\" \"PostmanRuntime/7.49.1\"","service":"user-service"}
+{"level":"info","message":"127.0.0.1 - - [16/Nov/2025:18:32:34 +0000] \"PUT /todos/691a1833a26fc6a8a171148 HTTP/1.1\" 500 - \"-\" \"PostmanRuntime/7.49.1\"","service":"user-service"}
+{"level":"info","message":"127.0.0.1 - - [16/Nov/2025:18:34:14 +0000] \"PUT /todos/691a1833a26fc6a8a171148 HTTP/1.1\" 500 - \"-\" \"PostmanRuntime/7.49.1\"","service":"user-service"}
+{"level":"info","message":"127.0.0.1 - - [16/Nov/2025:18:34:15 +0000] \"PUT /todos/691a1833a26fc6a8a171148 HTTP/1.1\" 500 - \"-\" \"PostmanRuntime/7.49.1\"","service":"user-service"}
+{"level":"info","message":"127.0.0.1 - - [16/Nov/2025:18:34:49 +0000] \"PUT /todos/691a1833a26fc6a8a1711484 HTTP/1.1\" 200 - \"-\" \"PostmanRuntime/7.49.1\"","service":"user-service"}
+{"level":"info","message":"127.0.0.1 - - [16/Nov/2025:18:34:57 +0000] \"PUT /todos/691a1833a26fc6a8a171148 HTTP/1.1\" 500 - \"-\" \"PostmanRuntime/7.49.1\"","service":"user-service"}
+{"level":"info","message":"127.0.0.1 - - [16/Nov/2025:18:35:24 +0000] \"PUT /todos/691a1833a26fc6a8a171148 HTTP/1.1\" 400 - \"-\" \"PostmanRuntime/7.49.1\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:18:45:50 +0000] \"POST /todos HTTP/1.1\" 409 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:18:45:50 +0000] \"POST /todos HTTP/1.1\" 201 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:18:45:50 +0000] \"GET /todos/691a1bde8e5752a825916ad1 HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:18:45:50 +0000] \"GET /todos/691a1bde8e5752a825916ac9 HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:18:45:50 +0000] \"GET /todos HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:18:56:32 +0000] \"POST /todos HTTP/1.1\" 409 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:18:56:33 +0000] \"POST /todos HTTP/1.1\" 201 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:18:56:33 +0000] \"GET /todos/691a1e61a1700b5c167ef2f2 HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:18:56:33 +0000] \"GET /todos/691a1e60a1700b5c167ef2ea HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:18:56:33 +0000] \"GET /todos HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:18:56:33 +0000] \"DELETE /todos/12345 HTTP/1.1\" 400 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:18:56:33 +0000] \"GET /todos/691a1e61a1700b5c167ef2f6 HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:18:56:33 +0000] \"DELETE /todos/691a1e61a1700b5c167ef2f8 HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:01:09 +0000] \"POST /todos HTTP/1.1\" 409 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:01:09 +0000] \"POST /todos HTTP/1.1\" 201 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:01:09 +0000] \"GET /todos/691a1f75a8d45cc6627468ec HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:01:09 +0000] \"GET /todos/691a1f75a8d45cc6627468e4 HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:01:09 +0000] \"GET /todos HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:01:09 +0000] \"DELETE /todos/12345 HTTP/1.1\" 400 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:01:09 +0000] \"GET /todos/691a1f75a8d45cc6627468f0 HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:01:09 +0000] \"DELETE /todos/691a1f75a8d45cc6627468f2 HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:01:09 +0000] \"PUT /todos/12345 HTTP/1.1\" 400 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:01:09 +0000] \"PUT /todos/691a1f75a8d45cc6627468f6 HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:01:09 +0000] \"PUT /todos/691a1f75a8d45cc6627468f8 HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:05:34 +0000] \"POST /todos HTTP/1.1\" 409 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:05:34 +0000] \"POST /todos HTTP/1.1\" 201 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:05:34 +0000] \"GET /todos/691a207ecd1f4e3e905f9639 HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:05:34 +0000] \"GET /todos/691a207ecd1f4e3e905f9631 HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:05:34 +0000] \"GET /todos HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:05:34 +0000] \"DELETE /todos/12345 HTTP/1.1\" 400 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:05:34 +0000] \"GET /todos/691a207ecd1f4e3e905f963d HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:05:34 +0000] \"DELETE /todos/691a207ecd1f4e3e905f963f HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:05:34 +0000] \"PUT /todos/12345 HTTP/1.1\" 400 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:05:34 +0000] \"PUT /todos/691a207ecd1f4e3e905f9643 HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:05:34 +0000] \"PUT /todos/691a207ecd1f4e3e905f9645 HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:05:34 +0000] \"PUT /todos/status/12345 HTTP/1.1\" 400 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:05:34 +0000] \"PUT /todos/status/691a207ecd1f4e3e905f9649 HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:05:34 +0000] \"PUT /todos/status/691a207ecd1f4e3e905f964b HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:06:28 +0000] \"POST /todos HTTP/1.1\" 409 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:06:28 +0000] \"POST /todos HTTP/1.1\" 201 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:06:28 +0000] \"GET /todos/691a20b419ead6585f2b43f9 HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:06:28 +0000] \"GET /todos/691a20b419ead6585f2b43f1 HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:06:28 +0000] \"GET /todos HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:06:28 +0000] \"DELETE /todos/12345 HTTP/1.1\" 400 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:06:28 +0000] \"GET /todos/691a20b419ead6585f2b43fd HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:06:28 +0000] \"DELETE /todos/691a20b419ead6585f2b43ff HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:06:28 +0000] \"PUT /todos/12345 HTTP/1.1\" 400 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:06:28 +0000] \"PUT /todos/691a20b419ead6585f2b4403 HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:06:28 +0000] \"PUT /todos/691a20b419ead6585f2b4405 HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:06:28 +0000] \"PUT /todos/status/12345 HTTP/1.1\" 400 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:06:28 +0000] \"PUT /todos/status/691a20b419ead6585f2b4409 HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:06:28 +0000] \"PUT /todos/status/691a20b419ead6585f2b440b HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:06:47 +0000] \"POST /todos HTTP/1.1\" 409 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:06:47 +0000] \"POST /todos HTTP/1.1\" 201 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:06:47 +0000] \"GET /todos/691a20c7e57b7bfa58edc24b HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:06:47 +0000] \"GET /todos/691a20c7e57b7bfa58edc243 HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:06:47 +0000] \"GET /todos HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:06:47 +0000] \"DELETE /todos/12345 HTTP/1.1\" 400 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:06:47 +0000] \"GET /todos/691a20c7e57b7bfa58edc24f HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:06:47 +0000] \"DELETE /todos/691a20c7e57b7bfa58edc251 HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:06:47 +0000] \"PUT /todos/12345 HTTP/1.1\" 400 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:06:47 +0000] \"PUT /todos/691a20c7e57b7bfa58edc255 HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:06:47 +0000] \"PUT /todos/691a20c7e57b7bfa58edc257 HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:06:47 +0000] \"PUT /todos/status/12345 HTTP/1.1\" 400 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:06:47 +0000] \"PUT /todos/status/691a20c7e57b7bfa58edc25b HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:06:47 +0000] \"PUT /todos/status/691a20c7e57b7bfa58edc25d HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:10:18 +0000] \"POST /todos HTTP/1.1\" 409 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:10:18 +0000] \"POST /todos HTTP/1.1\" 201 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:10:18 +0000] \"GET /todos/691a219ae46cc2db03179449 HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:10:18 +0000] \"GET /todos/691a219ae46cc2db03179441 HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:10:18 +0000] \"GET /todos HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:10:18 +0000] \"DELETE /todos/12345 HTTP/1.1\" 400 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:10:18 +0000] \"GET /todos/691a219ae46cc2db0317944d HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:10:18 +0000] \"DELETE /todos/691a219ae46cc2db0317944f HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:10:18 +0000] \"PUT /todos/12345 HTTP/1.1\" 400 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:10:18 +0000] \"PUT /todos/691a219ae46cc2db03179453 HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:10:18 +0000] \"PUT /todos/691a219ae46cc2db03179455 HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:10:18 +0000] \"PUT /todos/status/12345 HTTP/1.1\" 400 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:10:18 +0000] \"PUT /todos/status/691a219ae46cc2db03179459 HTTP/1.1\" 404 - \"-\" \"-\"","service":"user-service"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [16/Nov/2025:19:10:18 +0000] \"PUT /todos/status/691a219ae46cc2db0317945b HTTP/1.1\" 200 - \"-\" \"-\"","service":"user-service"}

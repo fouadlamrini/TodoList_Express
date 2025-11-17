@@ -1,9 +1,15 @@
 const TodoModel = require('../models/todoModel');
-
+const mongoose = require('mongoose');
 class todoController {
     // Creer Un ToDo
     async createTodo(req, res) {
         const { title, description, status } = req.body;
+
+        const exist = await TodoModel.findOne({ title: title });
+
+        if (exist) {
+            return res.status(409).json({ message: 'Todo with this title already exists' });
+        }
 
         try {
             const todo = await TodoModel.create({
@@ -14,7 +20,7 @@ class todoController {
             return res.status(201).json({ message: 'Todo created', todo });
         } catch (err) {
             console.log(err);
-            return res.status(409).json({ message: 'Todo with this title already exists' });
+            return res.status(401).json({ message: err });
         }
     }
 
@@ -40,8 +46,9 @@ class todoController {
         try {
             const todo = await TodoModel.find();
             res.status(200).json({
+                success: true,
                 message: 'todos:',
-                todo: todo,
+                todo: todo ? todo : 'todo is empty',
             });
         } catch (error) {
             res.status(500).json({ error: error });
@@ -52,6 +59,9 @@ class todoController {
     async deleteTodo(req, res) {
         try {
             const { id } = req.params;
+            if (!mongoose.Types.ObjectId.isValid(id)) {
+                return res.status(400).json({ message: 'Invalid Todo ID' });
+            }
             const todo = await TodoModel.findById(id);
 
             if (!todo) {
@@ -69,6 +79,9 @@ class todoController {
     async updateTodo(req, res) {
         try {
             const { id } = req.params;
+            if (!mongoose.Types.ObjectId.isValid(id)) {
+                return res.status(400).json({ message: 'Invalid Todo ID' });
+            }
             const todo = await TodoModel.findById(id);
             if (!todo) {
                 return res.status(404).json({ message: 'Todo not found' });
@@ -91,6 +104,9 @@ class todoController {
     async updateStatus(req, res) {
         try {
             const { id } = req.params;
+            if (!mongoose.Types.ObjectId.isValid(id)) {
+                return res.status(400).json({ message: 'Invalid Todo ID' });
+            }
             const todo = await TodoModel.findById(id);
             if (!todo) {
                 return res.status(404).json({ message: 'Todo not found' });
