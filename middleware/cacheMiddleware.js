@@ -8,12 +8,14 @@ const cacheMiddleware = async (req, res, next) => {
     const cachedData = await redisClient.get(cacheKey);
     if (cachedData) {
         // Cache Hit
+        console.log('✅ Cache Hit:', cacheKey);
         return res.send(JSON.parse(cachedData));
     }
     // Cache Miss
+    console.log('⚡ Cache Miss:', cacheKey);
     res.sendResponse = res.send;
     res.send = async (body) => {
-        await redisClient.set(cacheKey, JSON.stringify(body), 'EX', 60);
+        await redisClient.set(cacheKey, JSON.stringify(body), 'EX', 10);
         res.sendResponse(body);
     };
 
