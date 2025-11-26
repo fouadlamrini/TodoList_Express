@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const connectDb = require('./config/database');
 const dotenv = require('dotenv');
 const morgan = require('morgan');
@@ -13,6 +14,7 @@ const PORT = process.env.PORT;
 // 1. Application-wide middleware
 
 app.use(express.json());
+app.use(cors());
 app.use(morgan('dev'));
 app.use(morgan('combined', { stream: { write: (msg) => logger.info(msg.trim()) } }));
 app.use(helmet());

@@ -163,3 +163,12 @@ describe('/status/:id', function(){
 });
 
 })
+describe('/pendind',function(){
+    it('should return 404 id todos pending not found',async function(){
+        const response=await request(app)
+        .get("/todos/pending")
+        expect(response.status).to.equal(404);
+        expect(response.body.message).to.equal("Todos pending not found");
+        
+    })
+})

@@ -1,5 +1,6 @@
 const TodoModel = require('../models/todoModel');
 const mongoose = require('mongoose');
+const { redisClient } = require('../middleware/cacheMiddleware');
 class todoController {
     // Creer Un ToDo
     async createTodo(req, res) {
@@ -17,7 +18,9 @@ class todoController {
                 description: description,
                 status: status,
             });
-            return res.status(201).json({ message: 'Todo created', todo });
+            await redisClient.del('/todos');
+            await redisClient.del('/todos/pending');
+            return res.status(201).json({ message: 'Todo created', data: todo });
         } catch (err) {
             console.log(err);
             return res.status(401).json({ message: err });
@@ -38,6 +41,17 @@ class todoController {
         } catch (error) {
             console.error('getTodoByID error:', error);
             return res.status(500).json({ message: 'Internal server error' });
+        }
+    }
+    async getTodoPending(req, res) {
+        try {
+            const todoPending = await TodoModel.find({ status: 'pending' });
+            if (todoPending.length === 0) {
+                return res.status(404).json({ message: 'Todos pending not found' });
+            }
+            return res.status(200).json({ message: 'todos getted succefully', data: todoPending });
+        } catch (error) {
+            console.log(error);
         }
     }
 
@@ -69,6 +83,10 @@ class todoController {
             }
 
             await TodoModel.findByIdAndDelete(id);
+            await redisClient.del('/todos');
+            await redisClient.del('/todos/pending');
+            await redisClient.del(`/todos/${id}`);
+
             return res.status(200).json({ message: 'Todo deleted successfully' });
         } catch (error) {
             console.error(error);
@@ -92,6 +110,10 @@ class todoController {
                 { title, description },
                 { new: true }
             );
+            await redisClient.del('/todos');
+            await redisClient.del('/todos/pending');
+            await redisClient.del(`/todos/${id}`);
+
             return res
                 .status(200)
                 .json({ message: 'Todo updated successfully', newTodo: updatedTodo });
@@ -117,6 +139,9 @@ class todoController {
                 todo.status = 'pending';
             }
             await todo.save();
+            await redisClient.del('/todos');
+            await redisClient.del('/todos/pending');
+            await redisClient.del(`/todos/${id}`);
 
             return res.status(200).json({
                 message: 'Status updated successfully',
