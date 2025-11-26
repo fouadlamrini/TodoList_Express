@@ -35,4 +35,6 @@ sudo service redis-server stop
 
 
 
+# documentation
 
+https://colinchjs.github.io/2023-09-17/00-51-03-517363-implementing-server-side-caching-using-redis-in-expressjs-applications/ 
